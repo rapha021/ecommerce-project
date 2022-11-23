@@ -40,7 +40,7 @@ export const Slide = styled.section`
   }
 
   background-color: #d5b69a;
-  background-image: url(../../../public/slide-photo-1.svg);
+  background-image: url(/slide-photo-1.svg);
   background-repeat: no-repeat;
   background-position: center;
 `
