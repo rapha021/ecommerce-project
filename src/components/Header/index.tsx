@@ -28,7 +28,7 @@ const Header = () => {
 
       <Container>
         <div className="wrapper">
-          <img src="../../../public/logo.svg" alt="Logo do Grupo Hinode" />
+          <img src="/logo.svg" alt="Logo do Grupo Hinode" />
 
           <div className="search-bar">
             <input
