@@ -13,6 +13,10 @@ export const SubContainer = styled.header`
 
     width: 100%;
     max-width: 1440px;
+
+    @media (max-width: 1500px) {
+      max-width: 1030px;
+    }
   }
 
   width: 100%;
