@@ -5,15 +5,17 @@ interface IProps {
   borderColor: string
   textColor: string
   textHoverColor: string
+  transparent: boolean
+  height: string
+  width: string
 }
 
 export const Button = styled.button`
-  width: 171px;
-  height: 50px;
+  width: ${(props: IProps) => props.width};
+  height: ${(props: IProps) => props.height};
 
-  margin-top: 31px;
-
-  background-color: transparent;
+  background-color: ${(props: IProps) =>
+    props.transparent === true ? "transparent" : props.bgColor};
   border: 2px solid ${(props: IProps) => props.borderColor};
   color: ${(props: IProps) => props.textColor};
 

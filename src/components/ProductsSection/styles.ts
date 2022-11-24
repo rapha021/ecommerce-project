@@ -5,14 +5,15 @@ export const Wrapper = styled.section`
   align-items: center;
   justify-content: center;
 
-  margin: 96px 0 50px 0;
+  margin: 96px 0 0 0;
 
   width: 100%;
   max-width: 1440px;
 
-  svg {
+  .arrow-icon {
     font-size: 30px;
     color: #bdbdbd;
+    cursor: pointer;
   }
 `
 
@@ -51,5 +52,31 @@ export const List = styled.ul`
 
   li:last-child {
     margin-right: 65px;
+  }
+`
+
+export const ListCircle = styled.nav`
+  display: flex;
+  gap: 30px;
+
+  margin-bottom: 50px;
+
+  .selected {
+    height: 12px;
+    width: 22.5px;
+
+    background-color: #aa8232;
+
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  .not-selected {
+    height: 10.5px;
+    width: 10.5px;
+
+    border: 1.5px solid #aa8232;
+    border-radius: 50%;
+    display: inline-block;
   }
 `

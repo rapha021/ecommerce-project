@@ -1,4 +1,5 @@
-import Footer from "./components/Footer"
+import CategorySection from "./components/CategorySection"
+import MainFooter from "./components/Footer"
 import Header from "./components/Header"
 import InfoSection from "./components/InfoSection"
 import MainSlide from "./components/MainSlide"
@@ -11,7 +12,8 @@ function App() {
       <MainSlide />
       <InfoSection />
       <ProductsSection title="MAIS VENDIDOS" />
-      <Footer />
+      <CategorySection title="ISSO PODE SER DO SEU INTERESSE" />
+      <MainFooter />
     </>
   )
 }

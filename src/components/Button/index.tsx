@@ -6,6 +6,9 @@ interface IProps {
   bgColor: string
   textColor: string
   textHoverColor: string
+  transparent: boolean
+  width: string
+  height: string
 }
 
 const CustomButton = ({
@@ -14,6 +17,9 @@ const CustomButton = ({
   bgColor,
   textColor,
   textHoverColor,
+  transparent,
+  height,
+  width,
 }: IProps) => {
   return (
     <Button
@@ -21,6 +27,9 @@ const CustomButton = ({
       borderColor={borderColor}
       textColor={textColor}
       textHoverColor={textHoverColor}
+      transparent={transparent}
+      width={width}
+      height={height}
     >
       <h3>{title}</h3>
     </Button>

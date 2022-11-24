@@ -5,12 +5,13 @@ import CustomButton from "../Button"
 
 interface IProps {
   product: IProduct
+  index: number
 }
 
-const ProductCard = ({ product }: IProps) => {
+const ProductCard = ({ product, index }: IProps) => {
   const { name, price, promotionPrice, inPromotion, img } = product
   return (
-    <Card>
+    <Card key={index}>
       {/* <AiOutlineHeart className="hearth-icon" /> */}
       <img className="product-img" src={img} alt={name} />
 
@@ -48,6 +49,9 @@ const ProductCard = ({ product }: IProps) => {
         borderColor="#F2994A"
         textColor="#F2994A"
         textHoverColor="#fff"
+        transparent={true}
+        height="58px"
+        width="100%"
       />
     </Card>
   )

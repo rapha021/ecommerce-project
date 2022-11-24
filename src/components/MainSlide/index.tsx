@@ -15,6 +15,9 @@ const MainSlide = () => {
             borderColor="#fff"
             textColor="#fff"
             textHoverColor="#000"
+            transparent={true}
+            height="50px"
+            width="171px"
           />
         </div>
       </div>
