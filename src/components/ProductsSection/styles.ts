@@ -1,11 +1,15 @@
 import styled from "styled-components"
 
+interface IProps {
+  bgColor?: string
+}
+
 export const Wrapper = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
 
-  margin: 96px 0 0 0;
+  margin: 30px 0 0 0;
 
   width: 100%;
   max-width: 1440px;
@@ -24,7 +28,7 @@ export const Container = styled.section`
 
   width: 100%;
   max-width: 1440px;
-  height: 700px;
+  height: fit-content;
 
   h2 {
     font-family: "Oswald";
@@ -36,6 +40,12 @@ export const Container = styled.section`
   }
 `
 
+export const MainContainer = styled(Container)`
+  height: fit-content;
+
+  background-color: ${(props: IProps) => props.bgColor};
+`
+
 export const List = styled.ul`
   display: flex;
   flex-direction: column;
@@ -44,7 +54,7 @@ export const List = styled.ul`
   gap: 24px;
 
   width: 100%;
-  height: 519px;
+  height: 570px;
 
   li:first-child {
     margin-left: 65px;
@@ -59,7 +69,8 @@ export const ListCircle = styled.nav`
   display: flex;
   gap: 30px;
 
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 
   .selected {
     height: 12px;

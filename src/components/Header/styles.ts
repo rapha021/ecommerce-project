@@ -54,9 +54,11 @@ export const Container = styled(SubContainer)`
   }
   h4 {
     font-size: 9px;
+    cursor: pointer;
   }
   h3 {
     font-size: 12px;
+    cursor: pointer;
   }
   font-weight: 600;
 
@@ -111,5 +113,10 @@ export const LastContainer = styled(Container)`
   color: #fff;
   h2 {
     font-size: 14px;
+    cursor: pointer;
+  }
+
+  svg {
+    cursor: pointer;
   }
 `

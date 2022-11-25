@@ -4,6 +4,7 @@ export interface IProduct {
   promotionPrice: number
   inPromotion: boolean
   img: string
+  bannerImg?: string
 }
 
 export interface ICategory {
@@ -131,6 +132,45 @@ export const products: Array<IProduct[]> = [
       promotionPrice: 29.9,
       inPromotion: false,
       img: "/product_images/produto.svg",
+    },
+  ],
+]
+
+export const bannerProducts: Array<IProduct[]> = [
+  [
+    {
+      name: "Venyx L'Or",
+      price: 150,
+      inPromotion: false,
+      promotionPrice: 139.9,
+      img: "/product_images/perfumeVerix.png",
+      bannerImg: "/product_images/perfumeVerix.png",
+    },
+    {
+      name: "Multi- Vit Complex A-Z Mulheres 60 Cápsulas",
+      price: 85,
+      inPromotion: false,
+      promotionPrice: 59.9,
+      img: "/product_images/multivitamina.png",
+      bannerImg: "/product_images/multivitamina.png",
+    },
+  ],
+  [
+    {
+      name: "Multi- Vit Complex A-Z Mulheres 60 Cápsulas",
+      price: 85,
+      inPromotion: false,
+      promotionPrice: 59.9,
+      img: "/product_images/multivitamina.png",
+      bannerImg: "/product_images/multivitamina.png",
+    },
+    {
+      name: "Venyx L'Or",
+      price: 150,
+      inPromotion: false,
+      promotionPrice: 139.9,
+      img: "/product_images/perfumeVerix.png",
+      bannerImg: "/product_images/perfumeVerix.png",
     },
   ],
 ]

@@ -3,6 +3,9 @@ import styled from "styled-components"
 export const Container = styled.section`
   text-align: center;
 
+  width: 100%;
+  max-width: 1440px;
+
   h2 {
     font-family: "Oswald";
     font-weight: 300;
@@ -14,7 +17,7 @@ export const Container = styled.section`
 
   ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 24px;
   }
 `

@@ -44,6 +44,7 @@ const Header = () => {
             <BiUser />
             <span>
               <h4>Olá Visitante,</h4>
+
               <h3>ENTRE OU CADASTRE-SE</h3>
             </span>
           </div>

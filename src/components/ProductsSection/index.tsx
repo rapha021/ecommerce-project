@@ -1,14 +1,15 @@
 import ProductCard from "../ProductCard"
 import { IProduct, products } from "../../database/db"
-import { Container, List, ListCircle, Wrapper } from "./styles"
+import { Container, List, ListCircle, MainContainer, Wrapper } from "./styles"
 import { useState } from "react"
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai"
 
 interface IProps {
-  title: string
+  title?: string
+  bgColor?: string
 }
 
-const ProductsSection = ({ title }: IProps) => {
+const ProductsSection = ({ title, bgColor }: IProps) => {
   const [page, setPage] = useState(0)
 
   const nextPage = () => {
@@ -28,11 +29,11 @@ const ProductsSection = ({ title }: IProps) => {
   }
 
   return (
-    <>
+    <MainContainer bgColor={bgColor}>
       <Wrapper>
         <AiOutlineArrowLeft onClick={previousPage} className="arrow-icon" />
         <Container>
-          <h2>{title}</h2>
+          {title && <h2>{title}</h2>}
 
           <List>
             {products[page].map((product: IProduct, index) => (
@@ -45,12 +46,12 @@ const ProductsSection = ({ title }: IProps) => {
       <ListCircle>
         {products.map((CurrentPage, index) => {
           if (index === page) {
-            return <span className="selected"></span>
+            return <span className="selected" key={index}></span>
           }
-          return <span className="not-selected"></span>
+          return <span className="not-selected" key={index}></span>
         })}
       </ListCircle>
-    </>
+    </MainContainer>
   )
 }
 

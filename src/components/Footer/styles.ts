@@ -13,7 +13,7 @@ export const SubFooter = styled.footer`
       width: 421px;
       color: #fff;
 
-      /* font-family: "Aktiv Grotesk Ex"; */
+      font-family: "Aktiv Grotesk Ex";
       font-weight: 400;
       font-size: 44px;
       line-height: 44px;
